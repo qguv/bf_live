@@ -1,6 +1,6 @@
 # bf\_live
 
-Goal: a [brainfuck](https://en.wikipedia.org/wiki/Brainfuck) language interpreter and programming environment for the [Arduboy]().
+Goal: a [brainfuck](https://en.wikipedia.org/wiki/Brainfuck) language interpreter and programming environment for the [Arduboy](http://community.arduboy.com/).
 
 ## flashing
 
