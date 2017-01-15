@@ -1,0 +1,15 @@
+#include <stdio.h>
+#include <stdbool.h>
+#include "bf_interpret.h"
+
+struct bfstate state;
+
+int main(void)
+{
+	bool ok;
+	bfstate_init(&state);
+	ok = is_balanced(hi_program) && interpret(&state, hi_program);
+	printf("%s\n", ok? state.output : ":(");
+}
+
+/* vi: set syn=c ts=8 sts=8 sw=8 noet cindent: */
