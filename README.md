@@ -1,6 +1,6 @@
 # bf\_live
 
-Goal: an interpreter and programming environment for the [brainfuck](https://en.wikipedia.org/wiki/Brainfuck) language.
+Goal: a [brainfuck](https://en.wikipedia.org/wiki/Brainfuck) language interpreter and programming environment for the [Arduboy]().
 
 ## flashing
 
@@ -8,7 +8,7 @@ Open `bf_live/bf_live.ino` in the Arduino IDE. Make sure you have the Arduboy li
 
 ## inspiration
 
-  - [ABasm](https://github.com/fuopy/ABasm)
+@[fuopy](https://github.com/fuopy)'s incredible [ABasm](https://github.com/fuopy/ABasm) project is a similar project but with a custom assembly-like target language.
 
 ## to do
 
