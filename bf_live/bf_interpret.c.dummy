@@ -1,15 +1,17 @@
 #include <stdio.h>
 #include <stdbool.h>
+//#define DEBUG printf
 #include "bf_interpret.h"
 
 struct bfstate state;
+const char *const program = "++++++++++[>++++++++++<-]>++++.---.+++++++..+++.>++++++++[>++++<-]>+.";
 
 int main(void)
 {
 	bool ok;
 	bfstate_init(&state);
-	ok = is_balanced(hi_program) && interpret(&state, hi_program);
-	printf("%s\n", ok? state.output : ":(");
+	ok = is_balanced(program) && interpret(program, &state);
+	printf("%s\n", ok? state.output : ":(\n");
 }
 
 /* vi: set syn=c ts=8 sts=8 sw=8 noet cindent: */

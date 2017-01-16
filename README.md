@@ -1,10 +1,22 @@
 # bf\_live
 
-Goal: a [brainfuck](https://en.wikipedia.org/wiki/Brainfuck) language interpreter and programming environment for the [Arduboy](http://community.arduboy.com/).
+A [brainfuck](https://en.wikipedia.org/wiki/Brainfuck) language interpreter and programming environment for the [Arduboy](http://community.arduboy.com/).
 
 ## flashing
 
-Open `bf_live/bf_live.ino` in the Arduino IDE. Make sure you have the Arduboy libraries. Press 'Upload' (the &#x27a1; button).
+Open `bf_live/bf_live.ino` in the Arduino IDE. Make sure you have the Arduboy libraries. Press 'Upload' (the &#x27a1; button). You can start with a blank slate by holding _down_ on boot; otherwise, a simple template will be loaded.
+
+## use
+
+The program is in the top part of the screen and its output is at the bottom. As the program source is modified, the program will be re-run and its output updated.
+
+Move around the program source with the arrow keys. Hold a button and tap an arrow key to change a cell of program source. Tap either button to clear a cell.
+
+If you're getting 'err' as your output, make sure you're not violating any syntax or semantics rules:
+
+  - all loop starts/ends must be matched
+  - left of the zeroth tape cell, there are no other cells
+  - practical limits on memory (cell count and loop recursion depth)
 
 ## inspiration
 
@@ -13,7 +25,8 @@ Open `bf_live/bf_live.ino` in the Arduino IDE. Make sure you have the Arduboy li
 ## to do
 
   - [X] build the interpreter
-  - [ ] make it interactive by ~~stealing~~ adapting ABasm programming environment
+  - [X] make it interactive
+  - [ ] ~~steal~~ adapt ABasm programming environment UX
   - [ ] push buffer sizes to Arduboy's maximum stack size
 
 ## never asked questions
