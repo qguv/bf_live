@@ -2,6 +2,8 @@
 
 A [brainfuck](https://en.wikipedia.org/wiki/Brainfuck) language interpreter and programming environment for the [Arduboy](http://community.arduboy.com/).
 
+<img src="https://kuuv.io/i/Zh4oCHB.png" alt="bf_live running on a white Arduboy" />
+
 ## flashing
 
 Open `bf_live/bf_live.ino` in the Arduino IDE. Make sure you have the Arduboy libraries. Press 'Upload' (the &#x27a1; button). You can start with a blank slate by holding _down_ on boot; otherwise, a simple template will be loaded.
